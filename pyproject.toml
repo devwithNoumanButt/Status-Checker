@@ -1,13 +1,15 @@
 [project]
 name = "status-checker"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Tool to check website status"
 readme = "README.md"
 authors = [
     { name = "devwithNoumanButt", email = "devwithnoumanb20@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "streamlit>=1.65.0",
+]
 
 [project.scripts]
 status-checker = "status_checker:main"
@@ -17,9 +19,6 @@ requires = ["uv_build>=0.12.22,<0.13.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
-app = [
-    "streamlit>=1.65.0",
-]
 dev = [
     "pytest>=9.1.1",
     "requests>=2.34.2",
