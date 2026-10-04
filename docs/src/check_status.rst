@@ -1,4 +1,4 @@
 Check Status
 ============
 
-.. autofunction:: status_checker.check_status.check_status
+.. autofunction:: status_checker.check_status
